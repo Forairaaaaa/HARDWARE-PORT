@@ -35,6 +35,8 @@ class I2C_PORT {
         uint32_t _I2C_read24Bit(uint8_t addr);
         uint32_t _I2C_read32Bit(uint8_t addr);
         void     _I2C_readBuff(uint8_t addr, int size, uint8_t buff[]);
+    public:
+        int I2C_dev_scan();
 };
 
 #endif
